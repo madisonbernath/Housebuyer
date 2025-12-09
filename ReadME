@@ -1,0 +1,188 @@
+# House Buyer For Cash Brighton
+
+A modern, fast-loading website for cash home buying services in Brighton, Michigan. Built with Next.js and deployed on Vercel.
+
+## 🏠 About
+
+We buy houses for cash in Brighton, MI and surrounding areas. This website serves as the primary lead generation platform for homeowners looking to sell their properties quickly without the hassle of traditional real estate processes.
+
+## ✨ Features
+
+- **Fast Lead Capture** - Simple property submission form
+- **Mobile-First Design** - Optimized for all devices
+- **SEO Optimized** - Targeting local Brighton, MI searches
+- **Fast Performance** - Built on Next.js with Vercel Edge
+- **Trust Elements** - Testimonials, process transparency, and social proof
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Deployment**: Vercel
+- **Forms**: React Hook Form (or Vercel Forms)
+- **Analytics**: Vercel Analytics (optional)
+
+## 📁 Project Structure
+
+```
+/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Homepage / Landing page
+│   ├── how-it-works/
+│   │   └── page.tsx        # Process explanation
+│   ├── about/
+│   │   └── page.tsx        # About us / Our company
+│   ├── reviews/
+│   │   └── page.tsx        # Testimonials
+│   ├── contact/
+│   │   └── page.tsx        # Contact page
+│   └── api/
+│       └── submit-lead/
+│           └── route.ts    # Form submission handler
+├── components/
+│   ├── ui/                 # Reusable UI components
+│   │   ├── Button.tsx
+│   │   ├── Input.tsx
+│   │   └── Card.tsx
+│   ├── LeadForm.tsx        # Property submission form
+│   ├── Hero.tsx            # Hero section with CTA
+│   ├── ProcessSteps.tsx    # 3-step process section
+│   ├── Benefits.tsx        # Why sell to us
+│   ├── Situations.tsx      # We buy in any situation
+│   ├── Testimonials.tsx    # Customer reviews
+│   ├── FAQ.tsx             # Frequently asked questions
+│   ├── Footer.tsx          # Site footer
+│   └── Header.tsx          # Navigation header
+├── lib/
+│   └── utils.ts            # Utility functions
+├── public/
+│   ├── images/             # Optimized images
+│   └── favicon.ico
+├── styles/
+│   └── globals.css         # Global styles + Tailwind
+├── .env.local              # Environment variables (not committed)
+├── .gitignore
+├── next.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── package.json
+```
+
+## 🎯 Key Pages & Sections
+
+### Homepage Sections
+1. **Hero** - Headline, subheadline, lead capture form
+2. **Trust Bar** - "As seen on" logos, BBB badge, Google rating
+3. **Process Steps** - 3-step visual (Submit → Get Offer → Get Paid)
+4. **Benefits Grid** - No fees, no repairs, no cleaning, fast closing
+5. **Situations** - Foreclosure, divorce, inheritance, etc.
+6. **Testimonials** - Customer reviews with photos
+7. **FAQ** - Common questions accordion
+8. **Final CTA** - Another lead form
+9. **Footer** - Contact info, links, service areas
+
+## 🔧 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/madisonbernath/Housebuyer.git
+
+# Navigate to project directory
+cd Housebuyer
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+# Form submission (choose one)
+RESEND_API_KEY=your_resend_api_key
+# OR
+SENDGRID_API_KEY=your_sendgrid_api_key
+
+# Lead notification email
+NOTIFICATION_EMAIL=your@email.com
+
+# Optional: CRM integration
+CRM_WEBHOOK_URL=your_crm_webhook
+
+# Optional: Analytics
+NEXT_PUBLIC_GA_ID=your_google_analytics_id
+```
+
+## 📝 Content Guidelines
+
+### Target Keywords
+- "We buy houses Brighton MI"
+- "Sell my house fast Brighton Michigan"
+- "Cash home buyers Brighton"
+- "Sell house as-is Brighton MI"
+
+### Tone of Voice
+- Professional but friendly
+- Empathetic to seller situations
+- Transparent about process
+- Urgency without being pushy
+
+## 🚢 Deployment
+
+This project is configured for Vercel deployment:
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+Or connect your GitHub repository directly to Vercel for automatic deployments.
+
+## 📊 Lead Management
+
+Form submissions can be configured to:
+1. Send email notifications via Resend/SendGrid
+2. Post to a CRM webhook (HubSpot, Podio, etc.)
+3. Store in a database (Supabase, PlanetScale)
+4. Send SMS alerts via Twilio
+
+## 🎨 Design Inspiration
+
+Competitors analyzed:
+- housebuyerforcash.com
+- plutopropertygroup.com
+- wisebuysdetroit.com
+
+**Improvements over competitors:**
+- Cleaner, more modern design
+- Faster page load (no WordPress/Carrot bloat)
+- Better mobile experience
+- Simplified forms (fewer fields = higher conversion)
+- More authentic testimonials section
+
+## 📄 License
+
+Private - All rights reserved
+
+## 📞 Contact
+
+**House Buyer For Cash Brighton**  
+Brighton, MI 48116  
+Phone: (XXX) XXX-XXXX  
+Email: info@yourdomain.com
